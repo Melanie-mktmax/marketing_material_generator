@@ -1,0 +1,23 @@
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# 편집기
+.vscode/
+.idea/
+*.swp
+
+# 임시 · 백업 파일
+*~
+*.tmp
+*.bak
+*.log
+*- 복사본.*
+*- Copy.*
+
+# 업로드 테스트용 원천 자료 (사내 자료가 올라가지 않도록)
+samples/
+uploads/

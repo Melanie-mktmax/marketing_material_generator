@@ -1,0 +1,1511 @@
+<title>Global English Marketing Material Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+KR:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --ground: #F6F2F2;
+    --surface: #FFFFFF;
+    --surface-2: #FAF6F6;
+    --ink: #221A1E;
+    --ink-2: #5E5257;
+    --ink-3: #8E8287;
+    --line: #E6DADB;
+    --line-strong: #CDBCC0;
+    --accent: #9A2B52;
+    --accent-ink: #FFFFFF;
+    --accent-soft: #F7E6EC;
+    --clinical: #33646A;
+    --clinical-soft: #E3EEEE;
+    --good: #2E7D5B;
+    --warn: #A8690F;
+    --warn-soft: #FBF0DC;
+    --crit: #B3261E;
+    --crit-soft: #FBE7E5;
+    --selection: #F1D2DC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #161114;
+      --surface: #1E171A;
+      --surface-2: #261D21;
+      --ink: #F1E9EB;
+      --ink-2: #BBACB1;
+      --ink-3: #87777C;
+      --line: #33292D;
+      --line-strong: #4A3C42;
+      --accent: #E8809F;
+      --accent-ink: #2A0B16;
+      --accent-soft: #3A1F2A;
+      --clinical: #7FB6BB;
+      --clinical-soft: #1E3436;
+      --good: #6DBB95;
+      --warn: #D9A441;
+      --warn-soft: #3A2E17;
+      --crit: #E5736B;
+      --crit-soft: #3F1F1D;
+      --selection: #4A2535;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #161114;
+    --surface: #1E171A;
+    --surface-2: #261D21;
+    --ink: #F1E9EB;
+    --ink-2: #BBACB1;
+    --ink-3: #87777C;
+    --line: #33292D;
+    --line-strong: #4A3C42;
+    --accent: #E8809F;
+    --accent-ink: #2A0B16;
+    --accent-soft: #3A1F2A;
+    --clinical: #7FB6BB;
+    --clinical-soft: #1E3436;
+    --good: #6DBB95;
+    --warn: #D9A441;
+    --warn-soft: #3A2E17;
+    --crit: #E5736B;
+    --crit-soft: #3F1F1D;
+    --selection: #4A2535;
+  }
+
+  html, body { background: var(--ground); color: var(--ink); }
+  body {
+    margin: 0;
+    font-family: Archivo, Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    word-break: keep-all;
+  }
+  ::selection { background: var(--selection); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  textarea, input { font: inherit; color: inherit; background: transparent; }
+  textarea { resize: none; }
+  button { font: inherit; }
+
+  @media (min-width: 1024px) {
+    .workspace { height: calc(100vh - 56px); }
+  }
+
+  * { scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-thumb { background: var(--line-strong); border: 3px solid transparent; background-clip: padding-box; border-radius: 8px; }
+  *::-webkit-scrollbar-track { background: transparent; }
+
+  /* Generated copy — set as a finished manuscript. Latin in Newsreader, Hangul in Noto Serif KR. */
+  .copy { font-family: Newsreader, "Noto Serif KR", Georgia, "Times New Roman", serif; font-size: 17px; line-height: 1.58; color: var(--ink); overflow-wrap: anywhere; }
+  .copy[lang="ko"] { font-size: 15.5px; line-height: 1.78; word-break: keep-all; }
+  .copy > :first-child { margin-top: 0; }
+  .copy h4 { font-family: Archivo, Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .copy[lang="ko"] h4 { letter-spacing: 0.08em; font-size: 12px; }
+  .copy p { margin: 0 0 12px; }
+  .copy ul { list-style: none; padding-left: 20px; margin: 0 0 14px; }
+  .copy ul li { position: relative; margin: 0 0 6px; }
+  .copy ul li::before { content: ""; position: absolute; left: -20px; top: 0.78em; width: 9px; height: 1px; background: var(--ink-3); }
+  .copy ol { list-style: decimal outside; padding-left: 24px; margin: 0 0 14px; }
+  .copy ol li { margin: 0 0 6px; padding-left: 2px; }
+  .copy ol li::marker { color: var(--ink-3); font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace; font-size: 0.85em; }
+  .copy strong { font-weight: 600; }
+  .copy em { font-style: italic; }
+  .copy hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+  .copy .ph { font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace; font-size: 12px; color: var(--warn); background: var(--warn-soft); border: 1px dashed var(--warn); border-radius: 2px; padding: 0 5px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .copy .tag { color: var(--clinical); }
+  /* Streaming caret sits at the end of the last inline run, not on its own line. */
+  .copy.caret > p:last-child::after, .copy.caret > h4:last-child::after,
+  .copy.caret > ul:last-child > li:last-child::after, .copy.caret > ol:last-child > li:last-child::after {
+    content: ""; display: inline-block; width: 2px; height: 1em; background: var(--accent); margin-left: 3px; vertical-align: -0.15em; animation: blink 1s steps(2, start) infinite;
+  }
+
+  .editor { font-family: "IBM Plex Mono", ui-monospace, Consolas, "Malgun Gothic", monospace; font-size: 13px; line-height: 1.7; resize: vertical; }
+
+  @keyframes blink { to { visibility: hidden; } }
+  @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  .pulse { animation: pulse-dot 1.4s ease-in-out infinite; }
+  @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  .skeleton { background: linear-gradient(90deg, var(--line) 0%, var(--surface-2) 50%, var(--line) 100%); background-size: 200% 100%; animation: shimmer 1.8s linear infinite; border-radius: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse, .skeleton,
+    .copy.caret > p:last-child::after, .copy.caret > h4:last-child::after,
+    .copy.caret > ul:last-child > li:last-child::after, .copy.caret > ol:last-child > li:last-child::after { animation: none; }
+  }
+</style>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ground: 'var(--ground)',
+          surface: 'var(--surface)',
+          'surface-2': 'var(--surface-2)',
+          ink: { DEFAULT: 'var(--ink)', 2: 'var(--ink-2)', 3: 'var(--ink-3)' },
+          line: { DEFAULT: 'var(--line)', strong: 'var(--line-strong)' },
+          accent: { DEFAULT: 'var(--accent)', ink: 'var(--accent-ink)', soft: 'var(--accent-soft)' },
+          clinical: { DEFAULT: 'var(--clinical)', soft: 'var(--clinical-soft)' },
+          good: 'var(--good)',
+          warn: { DEFAULT: 'var(--warn)', soft: 'var(--warn-soft)' },
+          crit: { DEFAULT: 'var(--crit)', soft: 'var(--crit-soft)' },
+        },
+        fontFamily: {
+          display: ['Newsreader', '"Noto Serif KR"', 'Georgia', '"Times New Roman"', 'serif'],
+          sans: ['Archivo', 'Pretendard', '"Apple SD Gothic Neo"', '"Malgun Gothic"', 'system-ui', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'ui-monospace', 'Consolas', 'monospace'],
+        },
+      },
+    },
+  };
+</script>
+
+<div id="root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+  if (window.pdfjsLib) window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.28.4/babel.min.js"></script>
+
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useRef, useMemo, useCallback } = React;
+
+/* ───────────────────────── Domain data ───────────────────────── */
+
+const BRANDS = [
+  {
+    id: 'dclassy', name: 'DCLASSY', en: 'DCLASSY',
+    voice: 'Premium and refined, clinically grounded. Confident but understated; speaks to discerning practitioners and their patients.',
+  },
+  {
+    id: 'facetem', name: 'Facetem', en: 'Facetem',
+    voice: 'Technology-forward and evidence-first. Precise, practical, focused on procedure efficiency and reproducible outcomes.',
+  },
+  {
+    id: 'rialo', name: '리알로', en: 'Rialo',
+    voice: 'Warm and approachable. Natural-looking results, patient comfort and everyday confidence.',
+  },
+];
+
+const CHANNELS = [
+  {
+    id: 'academic', name: 'B2B Academic', audience: 'KOL · 학회 · 연구자',
+    desc: '연구 설계·평가지표·통계·한계를 앞세운 근거 중심 톤',
+    promptKo: 'KOL, 학회 청중, 임상 연구자. 연구 방법론·평가지표·효과 크기·이상반응 프로파일을 앞세우고, 한계를 솔직하게 언급하며, 동료 대 동료의 톤으로 과장 없이 씁니다.',
+    promptEn: 'Key opinion leaders, congress audiences and clinician-researchers. Lead with methodology, endpoints, effect sizes and adverse-event profile; acknowledge limitations plainly; peer-to-peer tone, no hype.',
+  },
+  {
+    id: 'sales', name: 'B2B Sales', audience: '병·의원 원장 · 구매 결정자',
+    desc: '환자 결과 + 병원 경제성(체어타임·재방문·차별화) 중심',
+    promptKo: '병·의원 원장과 구매 결정자. 환자 결과를 먼저, 이어서 병원 경제성(체어타임, 재방문, 시술 믹스), 대안 대비 차별점, 제공되는 지원을 다룹니다.',
+    promptEn: 'Clinic owners and purchasing decision-makers. Lead with patient outcomes, then practice economics (chair time, retention, treatment mix), differentiation against alternatives and the support they receive.',
+  },
+  {
+    id: 'sns', name: 'B2C SNS', audience: '일반 소비자 · 잠재 환자',
+    desc: '쉬운 언어의 베네핏, 엄격한 클레임 관리, 전문의 상담 유도',
+    promptKo: 'SNS의 잠재 환자. 쉬운 언어의 베네핏과 공감, 엄격한 클레임 관리, 모든 메시지가 의료 전문가 상담으로 이어지게 합니다.',
+    promptEn: 'Prospective patients on social media. Plain-language benefits and emotional resonance, strict claim discipline, and every message routes the reader to a licensed practitioner.',
+  },
+];
+
+const SOURCE_TYPES = [
+  {
+    id: 'clinical', name: '신규 임상 데이터', en: 'New clinical data',
+    hint: '연구 설계, n수, 평가 지표(GAIS·VAS·만족도 등), 결과 수치, 이상반응, 규제 상태를 붙여 넣거나 보고서 파일을 그대로 올리세요. 한국어·영어 모두 가능합니다.',
+    placeholder: '예) 12주 다기관 평가, n=64, 1차 평가 GAIS 1단계 이상 개선 87.5% …',
+    example: `[내부 임상 요약 — 12주 다기관 평가, 사내 보고용]
+· 설계: 전향적, 다기관(3개 기관, 서울·부산), n=64, 35–58세(평균 46.2세), Fitzpatrick III–IV
+· 시술: 단일 세션, 풀페이스 프로토콜(IFU 준수)
+· 1차 평가: 12주 시점 GAIS 1단계 이상 개선 87.5% (56/64, 연구자 평가)
+· 2차 평가: 환자 만족도 평균 4.3/5, 시술 중 통증 VAS 평균 3.1/10, 91%가 당일 일상 복귀
+· 이상반응: 일시적 홍반 23% (24시간 내 소실), 경미한 부종 9%, 중대한 이상반응 없음
+· 추적 관찰 완료율: 12주 100%
+· 규제: 리프팅 적응증 관련 EU/US 인허가 미확보(검토 진행 중) — 대외 표현 시 주의`,
+  },
+  {
+    id: 'competitor', name: '경쟁사 동향', en: 'Competitor intelligence',
+    hint: '경쟁 제품의 출시·가격·클레임·유통·학회 동향과 함께 우리 제품의 확인된 강점을 적거나, 시장 리포트 파일을 올리세요.',
+    placeholder: '예) 경쟁사 A, 듀얼 핸드피스 플랫폼 발표. "시술 시간 30% 단축" 클레임(논문 없음) …',
+    example: `[경쟁사 동향 메모 — IMCAS 2026 이후]
+· 경쟁사 A, 듀얼 핸드피스 신규 플랫폼 발표. "시술 시간 30% 단축" 클레임(자체 자료, 동료 심사 논문 없음)
+· 가격: 당사 대비 약 15% 높게 책정, 소모품 비용도 상승
+· 동남아 딜러 피드백: 교육 프로그램 부족, 초기 설치 지연 사례 보고
+· 마케팅 키워드: "No downtime", 인플루언서 중심 캠페인
+· 당사 확인된 강점: 12주 다기관 데이터 보유(n=64, GAIS 1단계 이상 개선 87.5%), 계약 후 48시간 내 현장 교육, 3년 보증`,
+  },
+];
+
+const TABS = [
+  { id: 'key', num: '1', label: '핵심 메시지', titleKo: '핵심 메시지', titleEn: 'English Key Messages',
+    empty: '채널에 맞춘 포지셔닝 문장, 3–5개의 핵심 메시지와 근거 수치, 그리고 이 데이터로는 쓰면 안 되는 과장 표현 목록이 생성됩니다.' },
+  { id: 'sheet', num: '2', label: '세일즈 디테일 시트', titleKo: 'B2B 세일즈 디테일 시트', titleEn: 'B2B Sales Detail Sheet Copy',
+    empty: '병·의원 원장용 디테일 시트 카피 — 헤드라인, 한눈에 보기, 임상 근거, 병원 관점의 가치, 예상 질문 대응, 하단 고지문이 생성됩니다.' },
+  { id: 'insta', num: '3', label: '인스타그램 캡션', titleKo: 'B2C 인스타그램 캡션', titleEn: 'B2C Instagram Caption',
+    empty: '후킹 첫 줄, 짧은 본문, 상담 유도 CTA, 전문가 상담 고지, 해시태그, 이미지 대체 텍스트가 생성됩니다.' },
+  { id: 'email', num: '4', label: '디스트리뷰터 이메일', titleKo: '디스트리뷰터 피치 이메일', titleEn: 'Distributor Pitch Email',
+    empty: '총판·대리점용 피치 이메일 — 제목(대안 2개), 프리헤더, 본문 3단락, 파트너 키트, 명확한 CTA와 서명이 생성됩니다.' },
+];
+
+const LANGS = {
+  ko: { id: 'ko', label: '국문', note: '국내용' },
+  en: { id: 'en', label: 'English', note: '해외용' },
+};
+
+const ERROR_COPY = {
+  not_granted: '생성 권한이 허용되지 않았습니다. 권한 요청을 수락한 뒤 다시 시도하세요.',
+  rate_limited: '요청이 너무 잦습니다. 잠시 후 다시 시도하세요.',
+  prompt_too_large: '원천 정보나 참고 자료가 너무 깁니다. 핵심 부분만 남기고 줄여 주세요.',
+  refused: '이 요청은 처리되지 않았습니다. 원천 정보의 표현을 바꿔 다시 시도하세요.',
+  session_expired: '세션이 만료되었습니다. 페이지를 새로고침한 뒤 다시 시도하세요.',
+  sampling_disabled: '이 아티팩트에서 Claude 생성 기능이 꺼져 있습니다.',
+  capability_disabled: '이 아티팩트에서 Claude 생성 기능이 꺼져 있습니다.',
+  capability_removed: '이 아티팩트에서 Claude 생성 기능이 제거되었습니다.',
+  not_declared: '이 아티팩트에는 Claude 생성 기능이 선언되어 있지 않습니다.',
+  images_unavailable: '이 화면에서는 이미지 첨부를 사용할 수 없습니다. 이미지를 제거하고 다시 시도하세요.',
+  image_rejected: '첨부 이미지를 처리하지 못했습니다. 다른 이미지로 바꿔 보세요.',
+  upstream_error: '일시적인 오류입니다. 잠시 후 다시 시도하세요.',
+  empty_completion: '빈 응답이 돌아왔습니다. 다시 시도하세요.',
+  transform_error: '일시적인 오류입니다. 잠시 후 다시 시도하세요.',
+  queue_overflow: '대기 중인 요청이 너무 많습니다. 잠시 후 다시 시도하세요.',
+  invalid_request: '요청 형식에 문제가 있습니다. 페이지를 새로고침하세요.',
+};
+
+// The runtime caps one prompt at 65,536 UTF-8 bytes (Korean is ~3 bytes per character), so everything is budgeted in bytes.
+const PROMPT_BUDGET_BYTES = 62000;
+const MAX_SOURCE_BYTES = 36000;
+const MAX_REF_FILE_BYTES = 25 * 1024 * 1024;
+const MAX_PDF_PAGES = 80;
+
+function errCopy(e) { return ERROR_COPY[e && e.code] || `오류가 발생했습니다${e && e.message ? ` (${e.message})` : ''}.`; }
+const LS_INPUT_KEY = 'gemmg.workspace.v2';
+const LS_OUTPUT_KEY = 'gemmg.outputs.v2';
+const LS_REFS_KEY = 'gemmg.refs.v1';
+const LS_SRCFILES_KEY = 'gemmg.sourcefiles.v1';
+
+const REF_ACCEPT = '.pdf,.docx,.pptx,.xlsx,.txt,.md,.csv,.tsv,.json';
+const TEXT_EXTS = ['txt', 'md', 'csv', 'tsv', 'json'];
+
+const HEADER_LINES = ['## [1] KEY MESSAGES', '## [2] B2B SALES DETAIL SHEET', '## [3] B2C INSTAGRAM CAPTION', '## [4] DISTRIBUTOR PITCH EMAIL'];
+
+/* ───────────────────────── Prompts ───────────────────────── */
+
+function cleanTag(s) { return s.replace(/[^\p{L}\p{N}]/gu, ''); }
+
+// Step 1 — Korean first: the domestic set, written natively in Korean.
+function buildKoreanPrompt({ brand, channel, sourceType, source, sourceFilesBlock = '', refsBlock = '', imageCount = 0, sourceImageCount = 0 }) {
+  const en = brand.en.trim() || brand.name;
+  const brandTags = [cleanTag(brand.name), cleanTag(en)]
+    .filter((t, i, a) => t && a.findIndex((x) => x.toLowerCase() === t.toLowerCase()) === i)
+    .map((t) => '#' + t).join(', ') || '브랜드 해시태그';
+  const refsIntro = refsBlock
+    ? `\n참고 자료 (PM이 업로드한 사내 자료 — 브랜드 가이드, 기존 카피, 임상 문서, 발표 자료 등. 톤·용어·표기·기존에 승인된 클레임을 참고하되, 참고 자료에도 없는 사실은 만들지 마세요. SOURCE와 상충하면 SOURCE를 우선합니다.):\n${refsBlock}\n`
+    : '';
+  const srcFilesIntro = sourceFilesBlock
+    ? `\n첨부 원천 자료 (PM이 업로드한 원본 문서 — 위 SOURCE와 동등한 1차 자료입니다. 연구 설계·대상 수·기간·평가지표·결과 수치·이상반응·규제 상태를 여기서 정확히 읽어 인용하고, 문서에 없는 값을 만들지 마세요.):\n${sourceFilesBlock}\n`
+    : '';
+  const imageNote = imageCount > 0
+    ? `\n첨부 이미지 ${imageCount}장${sourceImageCount > 0 ? ` (그중 ${sourceImageCount}장은 원천 자료 이미지 — 표·그래프·슬라이드의 수치를 그대로 읽어 사용하세요)` : ''}은 PM이 올린 제품·슬라이드·기존 자료 이미지입니다. 이미지 속 텍스트·수치·비주얼 톤도 함께 반영하세요.\n`
+    : '';
+  const sourceGuidance = sourceType.id === 'competitor'
+    ? `SOURCE는 경쟁사 동향입니다. SOURCE에 명시된 '확인된 강점'만으로 ${brand.name}의 차별화 포지셔닝을 세우세요. 경쟁사를 비방하거나 왜곡하지 말고, SOURCE가 사실로 명시하지 않는 한 "최근 출시된 대안 제품"처럼 중립적으로 지칭하세요. 경쟁사의 검증되지 않은 클레임을 사실처럼 옮기지 마세요.`
+    : `SOURCE는 신규 임상 데이터입니다. 독자가 연구 자료와 대조해 확인할 수 있는 표현으로 옮기세요. 사용하는 모든 수치에 연구 조건(대상 수, 기간, 평가지표, 평가 방법)을 함께 붙이세요.`;
+
+  return `당신은 한국 메디컬 에스테틱 기업의 시니어 마케팅 카피라이터입니다. 아래 SOURCE를 바탕으로 국내용 마케팅 자료를 한국어로 작성하세요. 이 국문 자료는 PM 검수 후 해외용 영문으로도 변환되므로, 사실 관계와 구조를 정확하게 잡아야 합니다.
+
+브랜드: ${brand.name}${en !== brand.name ? ` (영문 표기 ${en})` : ''}
+브랜드 보이스(영문 메모, 톤 참고용): ${brand.voice.trim() || 'Professional, clear, credible.'}
+1차 타겟 채널: ${channel.name} — ${channel.promptKo}
+원천 정보 유형: ${sourceType.name}. ${sourceGuidance}
+
+SOURCE (직접 입력한 원천 정보, 한국어 또는 영어):
+"""
+${source.trim() || '(직접 입력한 내용 없음 — 아래 첨부 원천 자료를 사용하세요.)'}
+"""
+${srcFilesIntro}${refsIntro}${imageNote}
+공통 규칙
+1. 자연스럽고 전문적인 한국어로 씁니다. 통용되는 의학 용어(GAIS, VAS, IFU 등)는 그대로 둡니다. 영어 문장은 쓰지 않습니다(브랜드명·용어·해시태그 제외).
+2. SOURCE${sourceFilesBlock ? '와 첨부 원천 자료' : ''}${refsBlock || imageCount ? '와 참고 자료' : ''}에 있는 사실만 사용합니다. 수치·적응증·인허가·기전·가격·비교를 지어내지 마세요. 섹션에 꼭 필요한데 SOURCE에 없는 정보는 추측하지 말고 [PM: CE 인증 상태 확인], [대리점명] 같은 대괄호 플레이스홀더로 표시하세요.
+3. 국내 의료광고·의료기기 광고 규정을 고려한 표현: 치료 효과 보장, "영구적", "부작용 없음", "최고", "1위", "임상적으로 입증" 같은 절대적·최상급 표현은 SOURCE가 문자 그대로 뒷받침하지 않는 한 쓰지 않습니다. "임상에서 관찰된", "64명 대상 12주 연구에서"처럼 수치는 항상 연구 맥락과 함께 씁니다. 인허가가 미확정이면 승인된 것처럼 쓰지 않습니다. 소비자·유통사 대상 자료에는 "개인에 따라 결과가 다를 수 있습니다. 시술 가능 여부와 적응증은 국가·기관에 따라 다릅니다." 문구를 넣습니다.
+4. B2C 카피는 의료인의 판단이 필요한 치료 효과 주장을 하지 않으며, 반드시 의료 전문가 상담을 안내하고, 마지막에 [광고심의 확인 필요] 플레이스홀더를 한 번 넣습니다.
+5. KEY MESSAGES는 1차 타겟 채널에 최적화합니다. 나머지 세 자료는 각자의 독자에 맞추되 핵심 메시지와 일관되게 유지합니다.
+6. 아래 4개 섹션만, 이 순서대로, 각 섹션은 제시된 헤더 라인으로 정확히 시작합니다(헤더는 영문 그대로). 섹션 내부는 마크다운(### 소제목, - 불릿, **굵게**)을 씁니다. 서문과 맺음말은 쓰지 않습니다.
+
+## [1] KEY MESSAGES
+- 첫 줄에 **굵은** 한 줄 포지셔닝 문장.
+- 이어서 핵심 메시지 3–5개. 각 불릿은 **굵은 헤드라인**(15자 내외) 다음에 SOURCE에서 가져온 근거 한 문장.
+- ### 근거 수치 — 정확한 수치와 연구 맥락을 불릿으로.
+- ### 피해야 할 표현 — 이 SOURCE로는 과장이 되는 표현 4–6개와 각각의 안전한 대체 표현.
+
+## [2] B2B SALES DETAIL SHEET
+병·의원 원장과 구매 결정자용, 공백 제외 500–700자.
+- 헤드라인, 이어서 한 문장 서브헤드라인.
+- ### 한눈에 보기 — 불릿 3개.
+- ### 임상 근거 — 대상 수, 기간, 평가지표, 이상반응을 포함한 데이터.
+- ### 우리 병원에 주는 의미 — 불릿 3개: 환자 경험, 체어타임·워크플로, 병원 성장.
+- ### 예상 질문 대응 — 짧은 Q&A 2쌍, 각각 "**Q:** … / **A:** …" 형식.
+- 마지막 줄에 *기울임*으로 고지문 한 줄.
+
+## [3] B2C INSTAGRAM CAPTION
+- 첫 줄은 후킹 문장(더보기 접힘 전에 보이도록 공백 제외 50자 이내).
+- 이어서 짧은 문장 3–5줄, 한 줄에 한 아이디어, 줄 사이에 빈 줄. 이모지는 총 2–4개.
+- 상담을 유도하는 부드러운 CTA(구매 유도 금지).
+- 의료 전문가 상담을 안내하는 고지 한 줄, 그 뒤에 [광고심의 확인 필요].
+- 해시태그 8–12개를 한 줄에(한글·영문 혼용 가능), ${brandTags} 포함.
+- ### 대체 텍스트 — 어울리는 이미지를 설명하는 한 문장.
+
+## [4] DISTRIBUTOR PITCH EMAIL
+국내 총판·대리점 담당자용.
+- **제목:** 한 줄, 이어서 대안 2개를 불릿으로.
+- **프리헤더:** 공백 제외 45자 이내.
+- [대리점명] 담당자께 드리는 인사, 이어서 짧은 3단락: 새 소식; 담당 지역·시장에서 중요한 이유; 구체적 제안(디테일 시트, KOL 웨비나, 데모·교육 등). 본문 공백 제외 400–600자.
+- ### 파트너 키트 — ${brand.name}이(가) 제공할 수 있는 자료 불릿 3개.
+- 날짜나 다음 단계가 있는 명확한 CTA 한 줄, 그리고 [이름], [직함], ${brand.name} 서명.`;
+}
+
+// Step 2 — English: transcreate the reviewed Korean set for overseas markets.
+function buildEnglishPrompt({ brand, channel, sourceType, source, koreanText, refsBlock = '', present = [0, 1, 2, 3], partial = false }) {
+  const en = brand.en.trim() || brand.name;
+  const hashtag = '#' + (cleanTag(en) || cleanTag(brand.name) || 'Brand');
+  const headerList = HEADER_LINES.filter((_, i) => present.includes(i));
+  const partialNote = partial
+    ? ' The Korean set is incomplete (generation was stopped or cut short): transcreate only what is there, do not invent the missing parts, and if the last Korean section ends mid-sentence, end the English where the Korean ends.'
+    : '';
+  const refsIntro = refsBlock
+    ? `\nREFERENCE MATERIALS (uploaded by the PM — brand guides, prior copy, glossaries, clinical documents. Use them for terminology, naming and tone consistency; never add facts that are absent from both the Korean materials and these references):\n${refsBlock}\n`
+    : '';
+  return `You are a senior transcreation specialist for a Korean medical-aesthetics company. Below are reviewed KOREAN marketing materials for ${en}. Produce the international English versions for overseas markets.
+
+BRAND: ${en}${brand.name !== en ? ` (Korean name: ${brand.name})` : ''}
+BRAND VOICE: ${brand.voice.trim() || 'Professional, clear, credible.'}
+PRIMARY TARGET CHANNEL: ${channel.name} — ${channel.promptEn}
+SOURCE TYPE: ${sourceType.en}
+
+ORIGINAL SOURCE FACTS (reference only — never add facts beyond these or beyond the Korean materials):
+"""
+${source.trim()}
+"""
+
+KOREAN MATERIALS (the approved content; the section headers are shared markers):
+"""
+${koreanText.trim()}
+"""
+${refsIntro}
+RULES
+1. Transcreate, do not translate word-for-word: natural, polished international English that a native-speaking marketer would sign off on. Keep every fact, number and study context identical to the Korean. Keep the same message order and emphasis.
+2. Placeholders: keep square-bracket placeholders and translate their text ([PM: CE 인증 상태 확인] → [PM: confirm CE status]; [대리점명] → [Distributor name]; [이름], [직함] → [Your name], [Title]). Replace the Korea-only [광고심의 확인 필요] with [PM: check local advertising rules].
+3. Adapt Korea-specific references for overseas readers: 국내 총판·대리점 → the distributor partner; Korean hashtags → English hashtags; keep ${hashtag}. The email addresses an overseas distributor.
+4. Claim discipline for international markets: no guarantees; never "permanent", "risk-free", "no side effects", "best", "#1" or "clinically proven" unless the Korean literally supports it. Pending or unclear regulatory status must not read as approval. Include "Individual results vary. Availability and indications vary by market." in the consumer- and distributor-facing pieces.
+5. Formats: Key Messages — bold positioning line, 3–5 bullets with **bold headline** (≤ 10 words) + proof sentence, ### Proof points, ### Words to avoid. Sales sheet — 220–320 words, sub-headings ### At a glance / ### Clinical evidence / ### What it means for your practice / ### Objection handling, italic footer disclaimer. Instagram — hook ≤ 125 characters, 3–5 short lines with blank lines between, 2–4 emojis, soft consultation CTA, practitioner disclaimer, 8–12 hashtags on one line, ### Alt text. Email — **Subject:** + two alternates as bullets, **Preheader:** ≤ 90 characters, greeting to [Distributor name], three short paragraphs (170–240 words), ### Partner kit with 3 bullets, one clear CTA, sign-off [Your name], [Title], ${en}.
+6. Output only the sections that appear in the KOREAN MATERIALS (${present.length} of 4), in the same order, each beginning with the exact header line below. Do not create a section the Korean does not have.${partialNote} Markdown inside (### sub-headings, - bullets, **bold**). No Korean in the output. No preamble and no closing remarks.
+
+${headerList.join('\n')}`;
+}
+
+/* ───────────────────────── Parsing & rendering ───────────────────────── */
+
+const HEADER_RE = /^##\s*\[(\d)\]\s*([^\n]*)$/gm;
+
+function parseSections(raw, finished) {
+  const out = TABS.map(() => ({ started: false, body: '', complete: false }));
+  if (!raw) return out;
+  const heads = [];
+  HEADER_RE.lastIndex = 0;
+  let m;
+  while ((m = HEADER_RE.exec(raw))) heads.push({ idx: parseInt(m[1], 10) - 1, start: m.index, end: m.index + m[0].length });
+  heads.forEach((h, i) => {
+    if (h.idx < 0 || h.idx >= TABS.length) return;
+    const next = heads[i + 1];
+    const body = raw.slice(h.end, next ? next.start : raw.length).trim();
+    out[h.idx] = { started: true, body, complete: !!next || finished };
+  });
+  return out;
+}
+
+function applyEdits(sections, edits) {
+  return sections.map((s, i) => (typeof edits[i] === 'string' ? { ...s, body: edits[i], edited: true } : s));
+}
+
+function joinSections(sections) {
+  return sections.map((s, i) => (s.started ? `${HEADER_LINES[i]}\n\n${s.body}` : '')).filter(Boolean).join('\n\n');
+}
+
+function toBlocks(body) {
+  const blocks = [];
+  let para = [];
+  let list = null;
+  const flushPara = () => { if (para.length) { blocks.push({ type: 'p', lines: para }); para = []; } };
+  const flushList = () => { if (list) { blocks.push(list); list = null; } };
+  for (const rawLine of body.split('\n')) {
+    const t = rawLine.trim();
+    if (!t) { flushPara(); flushList(); continue; }
+    let m;
+    const t2 = t.replace(/^[-*•]\s+(?=#{1,6}\s)/, ''); // tolerate "- ### Heading" (a bulleted heading)
+    if ((m = t2.match(/^#{1,6}\s+(.*)$/))) { flushPara(); flushList(); blocks.push({ type: 'h', text: m[1] }); continue; }
+    if (/^(-{3,}|\*{3,}|_{3,})$/.test(t)) { flushPara(); flushList(); blocks.push({ type: 'hr' }); continue; }
+    if ((m = t.match(/^[-*•]\s+(.*)$/))) {
+      flushPara();
+      if (!list || list.type !== 'ul') { flushList(); list = { type: 'ul', items: [] }; }
+      list.items.push(m[1]); continue;
+    }
+    if ((m = t.match(/^\d+[.)]\s+(.*)$/))) {
+      flushPara();
+      if (!list || list.type !== 'ol') { flushList(); list = { type: 'ol', items: [] }; }
+      list.items.push(m[1]); continue;
+    }
+    flushList();
+    para.push(t.replace(/^>\s?/, ''));
+  }
+  flushPara(); flushList();
+  return blocks;
+}
+
+// Bold may contain a single '*' (e.g. footnote markers); a lone '*' glued to a digit/percent is a footnote, not emphasis.
+const INLINE_RE = /(\*\*(?!\s)[^\n]+?(?<!\s)\*\*(?![\p{L}\p{N}])|(?<![\p{L}\p{N}%])\*(?!\s)[^*\n]+?(?<!\s)\*(?![\p{L}\p{N}])|\[[^\]\n]+?\])/gu;
+const INLINE_TAG_RE = /(\*\*(?!\s)[^\n]+?(?<!\s)\*\*(?![\p{L}\p{N}])|(?<![\p{L}\p{N}%])\*(?!\s)[^*\n]+?(?<!\s)\*(?![\p{L}\p{N}])|\[[^\]\n]+?\]|#[\p{L}\p{N}_]+)/gu;
+
+function Inline({ text, hashtags }) {
+  const re = hashtags ? INLINE_TAG_RE : INLINE_RE;
+  const parts = [];
+  let last = 0, m, k = 0;
+  re.lastIndex = 0;
+  while ((m = re.exec(text))) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    const tok = m[0];
+    if (tok.startsWith('**')) parts.push(<strong key={k++}>{tok.slice(2, -2)}</strong>);
+    else if (tok.startsWith('*')) parts.push(<em key={k++}>{tok.slice(1, -1)}</em>);
+    else if (tok.startsWith('[')) parts.push(<span key={k++} className="ph">{tok}</span>);
+    else parts.push(<span key={k++} className="tag">{tok}</span>);
+    last = m.index + tok.length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return <>{parts}</>;
+}
+
+function CopyBody({ body, hashtags, streaming, lang }) {
+  const blocks = useMemo(() => toBlocks(body), [body]);
+  return (
+    <div className={`copy ${streaming ? 'caret' : ''}`} lang={lang}>
+      {blocks.map((b, i) => {
+        if (b.type === 'h') return <h4 key={i}><Inline text={b.text} hashtags={false} /></h4>;
+        if (b.type === 'hr') return <hr key={i} />;
+        if (b.type === 'ul' || b.type === 'ol') {
+          const Tag = b.type;
+          return <Tag key={i}>{b.items.map((it, j) => <li key={j}><Inline text={it} hashtags={hashtags} /></li>)}</Tag>;
+        }
+        return (
+          <p key={i}>
+            {b.lines.map((ln, j) => (
+              <React.Fragment key={j}>{j > 0 && <br />}<Inline text={ln} hashtags={hashtags} /></React.Fragment>
+            ))}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
+/* ───────────────────────── Helpers ───────────────────────── */
+
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; } catch (e) {}
+  try {
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.select();
+    const ok = document.execCommand('copy');
+    ta.remove();
+    return ok;
+  } catch (e) { return false; }
+}
+
+function wordCount(s) { return s ? s.split(/\s+/).filter(Boolean).length : 0; }
+function charCount(s) { return s ? s.replace(/\s/g, '').length : 0; }
+function lengthLabel(text, lang) {
+  return lang === 'ko' ? `${charCount(text).toLocaleString()}자` : `${wordCount(text).toLocaleString()} words`;
+}
+
+function loadJSON(key) { try { const s = localStorage.getItem(key); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+function saveJSON(key, obj) { try { localStorage.setItem(key, JSON.stringify(obj)); } catch (e) {} }
+
+const EMPTY_JOB = { raw: '', status: 'idle', error: null, truncated: false };
+
+function restoreJob(saved) {
+  if (!saved || !saved.raw) return EMPTY_JOB;
+  // Only a finished run comes back as 'done'; a stopped or failed run keeps its partial-content semantics.
+  return { raw: saved.raw, status: saved.status === 'done' ? 'done' : 'cancelled', error: null, truncated: !!saved.truncated };
+}
+
+/* ───────────────────────── Byte budgeting ───────────────────────── */
+
+const ENC = new TextEncoder();
+const DEC = new TextDecoder('utf-8', { fatal: false });
+function byteLength(s) { return s ? ENC.encode(s).length : 0; }
+function truncateBytes(s, maxBytes) {
+  if (maxBytes <= 0) return '';
+  const bytes = ENC.encode(s);
+  if (bytes.length <= maxBytes) return s;
+  return DEC.decode(bytes.slice(0, maxBytes)).replace(new RegExp(String.fromCharCode(0xFFFD) + '+$'), ''); // drop a trailing partial code point
+}
+function fmtBytes(n) { return n < 1024 ? `${n} B` : n < 1024 * 1024 ? `${(n / 1024).toFixed(n < 10240 ? 1 : 0)} KB` : `${(n / 1024 / 1024).toFixed(1)} MB`; }
+
+// Fit file texts into a byte budget: equal shares first, then hand unused share to longer files.
+function fitReferences(refs, budget, label = '참고 자료') {
+  const ready = refs.filter((r) => r.status === 'ready' && r.text);
+  if (!ready.length || budget <= 0) return { block: '', items: refs.map((r) => ({ id: r.id, used: 0 })) };
+  const HEADER_ALLOWANCE = 120;
+  let remaining = Math.max(0, budget - ready.length * HEADER_ALLOWANCE);
+  const alloc = Object.fromEntries(ready.map((r) => [r.id, 0]));
+  let pending = ready.slice();
+  while (pending.length && remaining > 0) {
+    const share = Math.floor(remaining / pending.length);
+    if (share <= 0) break;
+    const next = [];
+    for (const r of pending) {
+      const need = r.bytes - alloc[r.id];
+      if (need <= share) { alloc[r.id] += need; remaining -= need; }
+      else { alloc[r.id] += share; remaining -= share; next.push(r); }
+    }
+    if (next.length === pending.length && next.every((r) => alloc[r.id] >= r.bytes)) break;
+    pending = next;
+  }
+  const parts = ready.map((r, i) => {
+    const text = truncateBytes(r.text, alloc[r.id]);
+    const partial = alloc[r.id] < r.bytes;
+    return `--- ${label} ${i + 1}: ${r.name} (${r.ext.toUpperCase()}, ${partial ? `${text.replace(/\s/g, '').length.toLocaleString()}자 / 전체 ${r.chars.toLocaleString()}자 중 일부` : `${r.chars.toLocaleString()}자 전체`}) ---\n${text}`;
+  });
+  return { block: parts.join('\n\n'), items: refs.map((r) => ({ id: r.id, used: alloc[r.id] || 0 })) };
+}
+
+/* ───────────────────────── Reference file extraction (all in the browser) ───────────────────────── */
+
+function decodeEntities(s) {
+  return s.replace(/&(amp|lt|gt|quot|apos|#x[0-9a-fA-F]+|#\d+);/g, (m, e) => {
+    if (e === 'amp') return '&'; if (e === 'lt') return '<'; if (e === 'gt') return '>'; if (e === 'quot') return '"'; if (e === 'apos') return "'";
+    const code = e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10);
+    return Number.isFinite(code) ? String.fromCodePoint(code) : m;
+  });
+}
+// Breaks and tabs are empty elements OUTSIDE the text runs, so turn them into text runs first
+// — otherwise the run extractor drops them and words from separate lines get glued together.
+function xmlParagraphs(xml, paraTag, textTag, breaks = []) {
+  let doc = xml;
+  for (const [tag, ch] of breaks) doc = doc.replace(new RegExp(`<${tag}(?:\\s[^>]*)?/>`, 'g'), `<${textTag}>${ch}</${textTag}>`);
+  const paras = doc.split(new RegExp(`</${paraTag}>`));
+  const tRe = new RegExp(`<${textTag}(?:\\s[^>]*)?>([\\s\\S]*?)</${textTag}>`, 'g');
+  const out = [];
+  for (const p of paras) {
+    const texts = [];
+    let m;
+    tRe.lastIndex = 0;
+    while ((m = tRe.exec(p))) texts.push(decodeEntities(m[1]));
+    const line = texts.join('').replace(/[ \t]+\n/g, '\n').trim();
+    if (line) out.push(line);
+  }
+  return out.join('\n');
+}
+function normalizeText(s) { return s.replace(/\r\n?/g, '\n').replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim(); }
+
+async function extractDocx(buf) {
+  const zip = await JSZip.loadAsync(buf);
+  const doc = zip.file('word/document.xml');
+  if (!doc) throw new Error('word/document.xml 없음');
+  const xml = await doc.async('string');
+  return xmlParagraphs(xml, 'w:p', 'w:t', [['w:br', '\n'], ['w:tab', '\t'], ['w:cr', '\n']]);
+}
+async function extractPptx(buf) {
+  const zip = await JSZip.loadAsync(buf);
+  const slides = Object.keys(zip.files).filter((n) => /^ppt\/slides\/slide\d+\.xml$/.test(n))
+    .sort((a, b) => parseInt(a.match(/slide(\d+)/)[1], 10) - parseInt(b.match(/slide(\d+)/)[1], 10));
+  if (!slides.length) throw new Error('슬라이드 없음');
+  const parts = [];
+  for (const name of slides) {
+    const xml = await zip.file(name).async('string');
+    const text = xmlParagraphs(xml, 'a:p', 'a:t', [['a:br', '\n']]);
+    if (text) parts.push(`[슬라이드 ${name.match(/slide(\d+)/)[1]}]\n${text}`);
+  }
+  return parts.join('\n\n');
+}
+async function extractXlsx(buf) {
+  const zip = await JSZip.loadAsync(buf);
+  const shared = [];
+  const ss = zip.file('xl/sharedStrings.xml');
+  if (ss) {
+    const xml = await ss.async('string');
+    const siRe = /<si>([\s\S]*?)<\/si>/g;
+    let m;
+    while ((m = siRe.exec(xml))) {
+      const tRe = /<t(?:\s[^>]*)?>([\s\S]*?)<\/t>/g;
+      const texts = [];
+      let t;
+      while ((t = tRe.exec(m[1]))) texts.push(decodeEntities(t[1]));
+      shared.push(texts.join(''));
+    }
+  }
+  const sheets = Object.keys(zip.files).filter((n) => /^xl\/worksheets\/sheet\d+\.xml$/.test(n))
+    .sort((a, b) => parseInt(a.match(/sheet(\d+)/)[1], 10) - parseInt(b.match(/sheet(\d+)/)[1], 10));
+  const parts = [];
+  for (const name of sheets) {
+    const xml = await zip.file(name).async('string');
+    const rows = [];
+    const rowRe = /<row(?:\s[^>]*)?>([\s\S]*?)<\/row>/g;
+    let r;
+    while ((r = rowRe.exec(xml))) {
+      const cells = [];
+      const cRe = /<c(\s[^>]*)?>([\s\S]*?)<\/c>/g;
+      let c;
+      while ((c = cRe.exec(r[1]))) {
+        const attrs = c[1] || '';
+        const inner = c[2];
+        const type = (attrs.match(/\bt="([^"]+)"/) || [])[1];
+        let v = '';
+        if (type === 's') { const idx = parseInt((inner.match(/<v>([^<]*)<\/v>/) || [])[1], 10); v = shared[idx] ?? ''; }
+        else if (type === 'inlineStr') { v = decodeEntities((inner.match(/<t(?:\s[^>]*)?>([\s\S]*?)<\/t>/) || [])[1] || ''); }
+        else { v = decodeEntities((inner.match(/<v>([^<]*)<\/v>/) || [])[1] || ''); }
+        cells.push(v);
+      }
+      const line = cells.join('\t').replace(/\t+$/, '');
+      if (line.trim()) rows.push(line);
+    }
+    if (rows.length) parts.push(`[시트 ${name.match(/sheet(\d+)/)[1]}]\n${rows.join('\n')}`);
+  }
+  if (!parts.length) throw new Error('읽을 수 있는 셀이 없습니다');
+  return parts.join('\n\n');
+}
+async function extractPdf(buf) {
+  if (!window.pdfjsLib) throw new Error('PDF 라이브러리를 불러오지 못했습니다');
+  const pdf = await window.pdfjsLib.getDocument({ data: buf }).promise;
+  const pages = Math.min(pdf.numPages, MAX_PDF_PAGES);
+  const parts = [];
+  for (let p = 1; p <= pages; p++) {
+    const page = await pdf.getPage(p);
+    const content = await page.getTextContent();
+    let text = '';
+    for (const it of content.items) { text += it.str; if (it.hasEOL) text += '\n'; else if (it.str && !/\s$/.test(it.str)) text += ' '; }
+    text = text.replace(/[ \t]+/g, ' ').trim();
+    if (text) parts.push(`[p.${p}]\n${text}`);
+  }
+  if (pdf.numPages > pages) parts.push(`[${pdf.numPages - pages}쪽은 생략됨]`);
+  if (!parts.length) throw new Error('텍스트 레이어가 없는 PDF입니다(스캔본이면 이미지로 첨부하세요)');
+  return parts.join('\n\n');
+}
+async function extractText(file) {
+  const ext = (file.name.split('.').pop() || '').toLowerCase();
+  if (TEXT_EXTS.includes(ext) || file.type.startsWith('text/')) return normalizeText(await file.text());
+  const buf = await file.arrayBuffer();
+  if (ext === 'docx') return normalizeText(await extractDocx(buf));
+  if (ext === 'pptx') return normalizeText(await extractPptx(buf));
+  if (ext === 'xlsx') return normalizeText(await extractXlsx(buf));
+  if (ext === 'pdf') return normalizeText(await extractPdf(buf));
+  throw new Error('지원하지 않는 형식');
+}
+
+let refSeq = 0;
+function nextRefId() { refSeq += 1; return `r${refSeq}-${Math.random().toString(36).slice(2, 8)}`; }
+
+function useSample() {
+  const [state, setState] = useState({ status: 'connecting', fn: null, limits: null });
+  useEffect(() => {
+    let alive = true;
+    const c = window.claude;
+    if (!c || typeof c.use !== 'function') { setState({ status: 'unavailable', fn: null, limits: null }); return; }
+    c.use('sample')
+      .then(async (fn) => {
+        if (!alive) return;
+        if (!fn) { setState({ status: 'unavailable', fn: null, limits: null }); return; }
+        let limits = null;
+        try { limits = await fn.limits(); } catch (e) { limits = null; }
+        if (alive) setState({ status: 'ready', fn, limits });
+      })
+      .catch(() => { if (alive) setState({ status: 'unavailable', fn: null, limits: null }); });
+    return () => { alive = false; };
+  }, []);
+  return state;
+}
+
+/* ───────────────────────── Small UI pieces ───────────────────────── */
+
+function Eyebrow({ children, right }) {
+  return (
+    <div className="flex items-center justify-between mb-2.5 gap-3">
+      <span className="font-mono text-[10.5px] tracking-[0.16em] uppercase text-ink-3">{children}</span>
+      {right}
+    </div>
+  );
+}
+
+function Radio({ checked }) {
+  return (
+    <span aria-hidden="true" className={`inline-flex items-center justify-center w-[15px] h-[15px] rounded-full border shrink-0 ${checked ? 'border-accent' : 'border-line-strong'}`}>
+      {checked && <span className="w-[7px] h-[7px] rounded-full bg-accent" />}
+    </span>
+  );
+}
+
+function Btn({ children, variant = 'ghost', className = '', ...rest }) {
+  const base = 'inline-flex items-center gap-1.5 rounded-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed';
+  const styles = {
+    primary: 'h-9 px-4 bg-accent text-accent-ink text-[13px] font-semibold hover:brightness-95',
+    primarySmall: 'h-8 px-3 bg-accent text-accent-ink text-[12px] font-semibold hover:brightness-95',
+    outline: 'h-9 px-4 border border-accent text-accent text-[13px] font-semibold hover:bg-accent-soft',
+    stop: 'h-9 px-4 border border-ink text-ink text-[13px] font-semibold hover:bg-surface-2',
+    ghost: 'h-8 px-2.5 border border-line-strong text-[12px] text-ink-2 hover:text-ink hover:border-ink',
+    text: 'h-8 px-2 text-[12px] text-ink-3 hover:text-ink',
+  };
+  return <button type="button" className={`${base} ${styles[variant]} ${className}`} {...rest}>{children}</button>;
+}
+
+function CopyButton({ text, label = '복사' }) {
+  const [done, setDone] = useState(false);
+  const tRef = useRef(null);
+  useEffect(() => () => clearTimeout(tRef.current), []);
+  const onClick = async () => {
+    const ok = await copyText(text);
+    setDone(ok);
+    clearTimeout(tRef.current);
+    tRef.current = setTimeout(() => setDone(false), 1600);
+  };
+  return (
+    <button type="button" onClick={onClick} disabled={!text}
+      className={`inline-flex items-center gap-1.5 h-8 px-2.5 rounded-sm border text-[12px] transition-colors disabled:opacity-40 disabled:cursor-not-allowed ${done ? 'border-good text-good' : 'border-line-strong text-ink-2 hover:text-ink hover:border-ink'}`}>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.3" aria-hidden="true">
+        {done ? <path d="M2 6.5l2.6 2.6L10 3.5" /> : <><rect x="4" y="4" width="6.5" height="6.5" rx="1" /><path d="M8 4V2.5A1 1 0 007 1.5H2.5a1 1 0 00-1 1V7a1 1 0 001 1H4" /></>}
+      </svg>
+      {done ? '복사됨' : label}
+    </button>
+  );
+}
+
+function StatusPill({ status }) {
+  const map = {
+    connecting: { dot: 'bg-ink-3 pulse', text: 'Claude 연결 중' },
+    ready: { dot: 'bg-good', text: 'Claude 연결됨' },
+    unavailable: { dot: 'bg-warn', text: 'Claude 미연결' },
+  };
+  const s = map[status] || map.connecting;
+  return (
+    <span className="inline-flex items-center gap-2 h-7 px-2.5 rounded-sm border border-line text-[12px] text-ink-2 bg-surface-2" title={status === 'unavailable' ? 'claude.ai에서 아티팩트를 열면 생성 기능이 켜집니다.' : undefined}>
+      <span className={`w-1.5 h-1.5 rounded-full ${s.dot}`} />
+      {s.text}
+    </span>
+  );
+}
+
+// One row per uploaded document, showing how much of it fits into the prompt.
+function FileRow({ file: r, used, onRemove, onInline }) {
+  const partial = r.status === 'ready' && used > 0 && used < r.bytes;
+  const excluded = r.status === 'ready' && used === 0;
+  return (
+    <li className="flex items-center gap-3 min-h-[36px] px-3 border border-line rounded-sm bg-surface text-[12px]">
+      <span className="font-mono text-[10px] tracking-wider text-ink-3 w-10 shrink-0">{(r.ext || 'FILE').toUpperCase()}</span>
+      <span className="truncate min-w-0 flex-1 text-ink" title={r.name}>{r.name}</span>
+      {r.status === 'parsing' && <span className="text-ink-3 shrink-0">읽는 중<span className="pulse">…</span></span>}
+      {r.status === 'error' && <span className="text-crit shrink-0 truncate max-w-[48%]" title={r.error}>{r.error}</span>}
+      {r.status === 'ready' && (
+        <>
+          {onInline && (
+            <button type="button" onClick={() => onInline(r)} title="추출된 텍스트를 입력창으로 옮겨 직접 수정합니다"
+              className="shrink-0 text-[11.5px] text-ink-3 hover:text-ink underline decoration-dotted underline-offset-2">입력창으로</button>
+          )}
+          <span className={`font-mono text-[11px] shrink-0 ${excluded ? 'text-crit' : partial ? 'text-warn' : 'text-ink-3'}`}
+            title={excluded ? '용량이 부족해 이 파일은 포함되지 않습니다. 다른 자료나 입력을 줄이세요.' : partial ? '앞부분만 포함됩니다' : '전체 포함'}>
+            {excluded ? '용량 초과 · 제외' : partial ? `${r.chars.toLocaleString()}자 중 일부` : `${r.chars.toLocaleString()}자`}
+          </span>
+        </>
+      )}
+      <button type="button" onClick={() => onRemove(r.id)} aria-label={`${r.name} 제거`} className="shrink-0 text-ink-3 hover:text-ink px-1 text-[14px] leading-none">×</button>
+    </li>
+  );
+}
+
+function Check({ className = '' }) {
+  return <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.4" className={className} aria-hidden="true"><path d="M2 6.5l2.6 2.6L10 3.5" /></svg>;
+}
+
+/* ───────────────────────── App ───────────────────────── */
+
+function App() {
+  const savedInput = useMemo(() => loadJSON(LS_INPUT_KEY), []);
+  const savedOutput = useMemo(() => loadJSON(LS_OUTPUT_KEY), []);
+
+  // Inputs
+  const [brandId, setBrandId] = useState(savedInput?.brandId || BRANDS[0].id);
+  const [profiles, setProfiles] = useState(() => {
+    const base = Object.fromEntries(BRANDS.map((b) => [b.id, { en: b.en, voice: b.voice }]));
+    if (savedInput?.profiles) for (const id of Object.keys(base)) if (savedInput.profiles[id]) base[id] = { ...base[id], ...savedInput.profiles[id] };
+    return base;
+  });
+  const [channelId, setChannelId] = useState(savedInput?.channelId || CHANNELS[1].id);
+  const [sourceTypeId, setSourceTypeId] = useState(savedInput?.sourceTypeId || SOURCE_TYPES[0].id);
+  const [source, setSource] = useState(savedInput?.source || '');
+  const [voiceOpen, setVoiceOpen] = useState(false);
+
+  // Reference materials — documents are parsed to text in the browser; images ride along with the Korean generation only.
+  const [refs, setRefs] = useState(() => {
+    const saved = loadJSON(LS_REFS_KEY);
+    return Array.isArray(saved) ? saved.filter((r) => r && r.status === 'ready' && typeof r.text === 'string').map((r) => ({ ...r, id: r.id || nextRefId(), error: null })) : [];
+  });
+  const [imageRefs, setImageRefs] = useState([]); // { id, name, size, file, origin: 'source' | 'ref' } — session only
+  const [dragOver, setDragOver] = useState(null); // 'source' | 'ref'
+  const fileInputRef = useRef(null);
+
+  // Source files — uploaded clinical / competitor documents, treated as primary evidence alongside the typed source.
+  const [sourceFiles, setSourceFiles] = useState(() => {
+    const saved = loadJSON(LS_SRCFILES_KEY);
+    return Array.isArray(saved) ? saved.filter((r) => r && r.status === 'ready' && typeof r.text === 'string').map((r) => ({ ...r, id: r.id || nextRefId(), error: null })) : [];
+  });
+  const sourceInputRef = useRef(null);
+
+  // Outputs — Korean first, English derived from the reviewed Korean.
+  const [ko, setKo] = useState(() => restoreJob(savedOutput?.ko));
+  const [en, setEn] = useState(() => restoreJob(savedOutput?.en));
+  const [edits, setEdits] = useState(() => ({ ko: savedOutput?.edits?.ko || {}, en: savedOutput?.edits?.en || {} }));
+  const [stale, setStale] = useState(!!savedOutput?.stale);
+  const [snapshot, setSnapshot] = useState(savedOutput?.snapshot || null); // inputs the Korean set was generated from
+  const [job, setJob] = useState(null); // null | 'ko' | 'en'
+  const [view, setView] = useState(savedOutput?.view === 'en' ? 'en' : 'ko');
+  const [active, setActive] = useState(0);
+  const [editing, setEditing] = useState(null); // { lang, idx, text, before }
+  const [notice, setNotice] = useState(null); // { kind: 'warn' | 'crit', text } — outcome of the last run when nothing was produced
+  const pinnedRef = useRef(false);
+  const ctlRef = useRef(null);
+  const startedRef = useRef(0);
+  const textareaRef = useRef(null);
+
+  const sample = useSample();
+
+  const brand = BRANDS.find((b) => b.id === brandId) || BRANDS[0];
+  const profile = profiles[brand.id];
+  const channel = CHANNELS.find((c) => c.id === channelId) || CHANNELS[0];
+  const sourceType = SOURCE_TYPES.find((s) => s.id === sourceTypeId) || SOURCE_TYPES[0];
+  const brandFull = { ...brand, ...profile };
+
+  useEffect(() => { saveJSON(LS_INPUT_KEY, { brandId, channelId, sourceTypeId, source, profiles }); }, [brandId, channelId, sourceTypeId, source, profiles]);
+  const persistable = (r) => ({ id: r.id, name: r.name, ext: r.ext, size: r.size, text: r.text, chars: r.chars, bytes: r.bytes, status: r.status });
+  useEffect(() => { saveJSON(LS_REFS_KEY, refs.filter((r) => r.status === 'ready').map(persistable)); }, [refs]);
+  useEffect(() => { saveJSON(LS_SRCFILES_KEY, sourceFiles.filter((r) => r.status === 'ready').map(persistable)); }, [sourceFiles]);
+  useEffect(() => {
+    if (job) return; // persist settled outputs only
+    saveJSON(LS_OUTPUT_KEY, {
+      ko: { raw: ko.raw, status: ko.status, truncated: ko.truncated },
+      en: { raw: en.raw, status: en.status, truncated: en.truncated },
+      edits, stale, snapshot, view,
+    });
+  }, [job, ko, en, edits, stale, snapshot, view]);
+  useEffect(() => () => ctlRef.current?.abort(), []);
+
+  const running = job !== null;
+  const koFinished = ko.status === 'done' || ko.status === 'cancelled' || ko.status === 'error';
+  const enFinished = en.status === 'done' || en.status === 'cancelled' || en.status === 'error';
+  const koReady = ko.status === 'done' || (ko.status === 'cancelled' && !!ko.raw);
+  const enReady = en.status === 'done' || (en.status === 'cancelled' && !!en.raw);
+
+  const koGen = useMemo(() => parseSections(ko.raw, koFinished), [ko.raw, koFinished]);
+  const enGen = useMemo(() => parseSections(en.raw, enFinished), [en.raw, enFinished]);
+  const koSections = useMemo(() => applyEdits(koGen, edits.ko), [koGen, edits.ko]);
+  const enSections = useMemo(() => applyEdits(enGen, edits.en), [enGen, edits.en]);
+  const sections = view === 'ko' ? koSections : enSections;
+  const current = view === 'ko' ? ko : en;
+  const viewRunning = job === view;
+
+  const fingerprint = JSON.stringify({
+    brandId, channelId, sourceTypeId, source: source.trim(), en: profile.en, voice: profile.voice,
+    srcFiles: sourceFiles.filter((r) => r.status === 'ready').map((r) => [r.name, r.bytes]),
+    refs: refs.filter((r) => r.status === 'ready').map((r) => [r.name, r.bytes]),
+    images: imageRefs.map((im) => [im.name, im.size, im.origin]),
+  });
+  const inputsChanged = !!snapshot && snapshot.fingerprint !== fingerprint;
+
+  // Follow the section being written unless the reader picked a tab.
+  useEffect(() => {
+    if (!viewRunning || pinnedRef.current) return;
+    let last = -1;
+    sections.forEach((s, i) => { if (s.started) last = i; });
+    if (last >= 0 && last !== active) setActive(last);
+  }, [sections, viewRunning, active]);
+
+  const sourceBytes = useMemo(() => byteLength(source), [source]);
+  const imageLimits = (sample.limits && sample.limits.images) || null;
+  const acceptList = imageLimits ? `${REF_ACCEPT},${imageLimits.mediaTypes.join(',')}` : REF_ACCEPT;
+  const parsing = refs.some((r) => r.status === 'parsing') || sourceFiles.some((r) => r.status === 'parsing');
+  const readyRefs = refs.filter((r) => r.status === 'ready');
+  const readySourceFiles = sourceFiles.filter((r) => r.status === 'ready');
+  const sourceImages = imageRefs.filter((im) => im.origin === 'source');
+
+  // Uploaded source documents are primary evidence, so they claim the source budget before references get theirs.
+  const srcFit = useMemo(
+    () => fitReferences(sourceFiles, Math.max(0, MAX_SOURCE_BYTES - sourceBytes), '첨부 원천 자료'),
+    [sourceFiles, sourceBytes],
+  );
+  const srcUsedById = Object.fromEntries(srcFit.items.map((i) => [i.id, i.used]));
+  const sourceTotalBytes = sourceBytes + byteLength(srcFit.block);
+  const hasSource = source.trim().length > 0 || readySourceFiles.length > 0;
+  const sourceOk = hasSource && sourceBytes <= MAX_SOURCE_BYTES;
+
+  const refBudget = useMemo(
+    () => Math.max(0, PROMPT_BUDGET_BYTES - 400 - byteLength(buildKoreanPrompt({
+      brand: brandFull, channel, sourceType, source, sourceFilesBlock: srcFit.block,
+      imageCount: imageRefs.length, sourceImageCount: sourceImages.length,
+    }))),
+    [brandId, profile.en, profile.voice, channelId, sourceTypeId, source, srcFit.block, imageRefs.length, sourceImages.length],
+  );
+  const refFit = useMemo(() => fitReferences(refs, refBudget), [refs, refBudget]);
+  const usedById = Object.fromEntries(refFit.items.map((i) => [i.id, i.used]));
+  const koParsed = koGen.some((s) => s.started);
+  const canGenerate = sample.status === 'ready' && sourceOk && !running && !parsing && !editing;
+  const canTranslate = sample.status === 'ready' && koReady && koParsed && !running && !editing;
+
+  // One streaming helper for both jobs. Returns the settled job state so callers can restore the previous
+  // workspace when a run produced nothing (Stop while thinking, or an error before the first token).
+  const stream = useCallback(async (prompt, setJobState, { fresh, images } = {}) => {
+    ctlRef.current?.abort();
+    const ctl = new AbortController();
+    ctlRef.current = ctl;
+    startedRef.current = Date.now();
+    let local = { raw: '', status: 'thinking', error: null, truncated: false };
+    const set = (next) => { local = next; setJobState(next); };
+    set(local);
+    try {
+      const opts = {
+        signal: ctl.signal,
+        cache: fresh ? false : true,
+        onText: ({ text }) => set({ ...local, raw: text, status: 'writing' }),
+      };
+      if (images && images.length) opts.images = images;
+      const res = await sample.fn(prompt, opts);
+      set({ raw: res.text, status: 'done', error: null, truncated: !!res.truncated });
+    } catch (e) {
+      const streamed = local.raw; // whatever onText already delivered stays on screen
+      if (e && e.code === 'cancelled') {
+        const raw = (e && e.text) || streamed;
+        set({ raw, status: raw ? 'cancelled' : 'idle', error: null, truncated: false });
+      } else {
+        set({ raw: (e && e.text) || streamed, status: 'error', error: e || { code: 'unknown', message: '' }, truncated: false });
+      }
+    }
+    return local;
+  }, [sample.fn]);
+
+  const generateKorean = async ({ fresh } = {}) => {
+    if (!canGenerate) return;
+    const prev = { ko, en, edits, stale, snapshot };
+    setNotice(null);
+    pinnedRef.current = false;
+    setJob('ko'); setView('ko'); setActive(0); setEditing(null);
+    setEn(EMPTY_JOB); setEdits({ ko: {}, en: {} }); setStale(false);
+    setSnapshot({ fingerprint, source: source.trim(), sourceFilesBlock: srcFit.block, brand: brandFull, channelId, sourceTypeId });
+    // Source images go first so they survive the per-call image cap.
+    const ordered = [...sourceImages, ...imageRefs.filter((im) => im.origin !== 'source')];
+    const picked = imageLimits ? ordered.slice(0, imageLimits.maxCount) : [];
+    const images = picked.map((im) => im.file);
+    const prompt = buildKoreanPrompt({
+      brand: brandFull, channel, sourceType, source, sourceFilesBlock: srcFit.block, refsBlock: refFit.block,
+      imageCount: images.length, sourceImageCount: picked.filter((im) => im.origin === 'source').length,
+    });
+    const final = await stream(prompt, setKo, { fresh, images });
+    if (!final.raw) {
+      // Nothing arrived — put the previous workspace back instead of leaving it empty.
+      setKo(prev.ko); setEn(prev.en); setEdits(prev.edits); setStale(prev.stale); setSnapshot(prev.snapshot);
+      setNotice(final.status === 'error'
+        ? { kind: 'crit', text: `국문 생성 실패 — ${errCopy(final.error)}${prev.ko.raw ? ' 이전 결과를 유지합니다.' : ''}` }
+        : { kind: 'warn', text: `국문 생성이 중단되었습니다.${prev.ko.raw ? ' 이전 결과를 유지합니다.' : ''}` });
+    }
+    setJob(null);
+  };
+
+  const translateEnglish = async ({ fresh } = {}) => {
+    if (!canTranslate) return;
+    const prev = { en, enEdits: edits.en, stale };
+    setNotice(null);
+    pinnedRef.current = false;
+    setJob('en'); setView('en'); setActive(0); setEditing(null);
+    setEdits((e) => ({ ...e, en: {} })); setStale(false);
+    const snap = snapshot || { source: source.trim(), brand: brandFull, channelId, sourceTypeId };
+    const snapChannel = CHANNELS.find((c) => c.id === snap.channelId) || channel;
+    const snapType = SOURCE_TYPES.find((s) => s.id === snap.sourceTypeId) || sourceType;
+    const present = koSections.map((s, i) => (s.started ? i : -1)).filter((i) => i >= 0);
+    // The English pass needs the same facts; the Korean set is the bulk, so the source is capped here.
+    const combinedSource = truncateBytes(
+      [snap.source, snap.sourceFilesBlock].filter(Boolean).join('\n\n'),
+      Math.max(4000, MAX_SOURCE_BYTES - byteLength(joinSections(koSections))),
+    );
+    const args = {
+      brand: snap.brand || brandFull, channel: snapChannel, sourceType: snapType, source: combinedSource,
+      koreanText: joinSections(koSections), present, partial: ko.status === 'cancelled' || ko.truncated,
+    };
+    const { block } = fitReferences(refs, PROMPT_BUDGET_BYTES - 400 - byteLength(buildEnglishPrompt(args)));
+    const prompt = buildEnglishPrompt({ ...args, refsBlock: block });
+    const final = await stream(prompt, setEn, { fresh });
+    if (!final.raw) {
+      setEn(prev.en); setEdits((e) => ({ ...e, en: prev.enEdits })); setStale(prev.stale);
+      setNotice(final.status === 'error'
+        ? { kind: 'crit', text: `영문 변환 실패 — ${errCopy(final.error)}${prev.en.raw ? ' 이전 영문을 유지합니다.' : ''}` }
+        : { kind: 'warn', text: `영문 변환이 중단되었습니다.${prev.en.raw ? ' 이전 영문을 유지합니다.' : ''}` });
+    }
+    setJob(null);
+  };
+
+  // A double-click on the primary button would land its second click on Stop; ignore a Stop within the first moments.
+  const stop = () => { if (Date.now() - startedRef.current < 600) return; ctlRef.current?.abort(); };
+
+  const onSourceKey = (e) => {
+    if (!((e.ctrlKey || e.metaKey) && e.key === 'Enter')) return;
+    e.preventDefault();
+    if (!canGenerate) return;
+    if (!koReady) generateKorean();
+    else if (inputsChanged) generateKorean({ fresh: true });
+  };
+
+  const loadExample = () => { setSource(sourceType.example); textareaRef.current?.focus(); };
+  const updateProfile = (patch) => setProfiles((p) => ({ ...p, [brand.id]: { ...p[brand.id], ...patch } }));
+
+  // Classify dropped files, parse documents to text, attach images (session only).
+  // target 'source' = primary evidence (clinical data / competitor intel); 'ref' = tone & terminology reference.
+  const addFiles = async (fileList, target = 'ref') => {
+    const setList = target === 'source' ? setSourceFiles : setRefs;
+    const files = Array.from(fileList || []);
+    if (!files.length) return;
+    const extOf = (n) => (n.split('.').pop() || '').toLowerCase();
+    const docs = [], imgs = [], rejected = [];
+    for (const f of files) {
+      const ext = extOf(f.name);
+      if (f.type.startsWith('image/')) {
+        if (!imageLimits) rejected.push({ name: f.name, reason: '이 화면에서는 이미지 첨부를 지원하지 않습니다' });
+        else if (!imageLimits.mediaTypes.includes(f.type)) rejected.push({ name: f.name, reason: '지원하지 않는 이미지 형식' });
+        else if (f.size > imageLimits.maxInputBytes) rejected.push({ name: f.name, reason: `이미지가 너무 큽니다 (최대 ${fmtBytes(imageLimits.maxInputBytes)})` });
+        else imgs.push(f);
+      } else if (TEXT_EXTS.includes(ext) || ['pdf', 'docx', 'pptx', 'xlsx'].includes(ext) || f.type.startsWith('text/')) {
+        if (f.size > MAX_REF_FILE_BYTES) rejected.push({ name: f.name, reason: `파일이 너무 큽니다 (최대 ${fmtBytes(MAX_REF_FILE_BYTES)})` });
+        else docs.push(f);
+      } else {
+        rejected.push({ name: f.name, reason: '지원하지 않는 형식 (PDF · DOCX · PPTX · XLSX · TXT · MD · CSV · JSON)' });
+      }
+    }
+    if (imgs.length) {
+      const room = Math.max(0, imageLimits.maxCount - imageRefs.length);
+      imgs.slice(room).forEach((f) => rejected.push({ name: f.name, reason: `이미지는 최대 ${imageLimits.maxCount}장까지 첨부할 수 있습니다` }));
+      const take = imgs.slice(0, room);
+      if (take.length) setImageRefs((prev) => [...prev, ...take.map((f) => ({ id: nextRefId(), name: f.name, size: f.size, file: f, origin: target }))]);
+    }
+    const entries = docs.map((f) => ({ id: nextRefId(), name: f.name, ext: extOf(f.name), size: f.size, status: 'parsing', text: '', chars: 0, bytes: 0, error: null }));
+    const errors = rejected.map((r) => ({ id: nextRefId(), name: r.name, ext: extOf(r.name), size: 0, status: 'error', text: '', chars: 0, bytes: 0, error: r.reason }));
+    if (entries.length || errors.length) setList((prev) => [...prev, ...entries, ...errors]);
+    await Promise.all(entries.map(async (entry, i) => {
+      try {
+        const text = await extractText(docs[i]);
+        if (!text.trim()) throw new Error('추출된 텍스트가 없습니다');
+        setList((prev) => prev.map((r) => (r.id === entry.id ? { ...r, status: 'ready', text, chars: text.replace(/\s/g, '').length, bytes: byteLength(text) } : r)));
+      } catch (e) {
+        setList((prev) => prev.map((r) => (r.id === entry.id ? { ...r, status: 'error', error: (e && e.message) || '읽기 실패' } : r)));
+      }
+    }));
+  };
+  const removeRef = (id) => setRefs((prev) => prev.filter((r) => r.id !== id));
+  const removeSourceFile = (id) => setSourceFiles((prev) => prev.filter((r) => r.id !== id));
+  const removeImage = (id) => setImageRefs((prev) => prev.filter((im) => im.id !== id));
+  const onDrop = (target) => (e) => { e.preventDefault(); setDragOver(null); addFiles(e.dataTransfer && e.dataTransfer.files, target); };
+  const dropProps = (target) => ({
+    onDragOver: (e) => { e.preventDefault(); if (dragOver !== target) setDragOver(target); },
+    onDragLeave: () => setDragOver((d) => (d === target ? null : d)),
+    onDrop: onDrop(target),
+  });
+  // Pull an extracted document into the editable source box so the PM can trim it before generating.
+  const inlineSourceFile = (r) => {
+    setSource((s) => (s.trim() ? `${s.trim()}\n\n` : '') + `[${r.name}]\n${r.text}`);
+    removeSourceFile(r.id);
+    textareaRef.current?.focus();
+  };
+
+  // Section editing (raw Markdown). Editing the Korean after English exists marks the English stale.
+  const startEdit = () => setEditing({ lang: view, idx: active, text: sections[active].body, before: sections[active].body });
+  const saveEdit = () => {
+    if (!editing) return;
+    const text = editing.text.trim();
+    const generated = (editing.lang === 'ko' ? koGen : enGen)[editing.idx].body;
+    setEdits((e) => {
+      const next = { ...e[editing.lang] };
+      if (text === generated) delete next[editing.idx]; else next[editing.idx] = text;
+      return { ...e, [editing.lang]: next };
+    });
+    if (editing.lang === 'ko' && text !== editing.before && (enReady || en.raw)) setStale(true);
+    setEditing(null);
+  };
+  const revertEdit = () => {
+    setEdits((e) => { const next = { ...e[view] }; delete next[active]; return { ...e, [view]: next }; });
+    if (view === 'ko' && (enReady || en.raw)) setStale(true);
+  };
+
+  const allText = useMemo(() => TABS.map((t, i) => sections[i].started ? `## ${view === 'ko' ? t.titleKo : t.titleEn}\n\n${sections[i].body}` : '').filter(Boolean).join('\n\n\n'), [sections, view]);
+  const writingIdx = viewRunning ? sections.reduce((acc, s, i) => (s.started ? i : acc), -1) : -1;
+
+  // Status line
+  let statusLine = null;
+  if (job === 'ko' && ko.status === 'thinking') statusLine = <span className="text-ink-2">Claude가 원천 정보를 읽고 있습니다<span className="pulse">…</span></span>;
+  else if (job === 'ko') statusLine = <span className="text-ink-2">국문 작성 중 · 섹션 <span className="font-mono">{Math.max(koSections.filter((s) => s.started).length, 1)}/4</span></span>;
+  else if (job === 'en' && en.status === 'thinking') statusLine = <span className="text-ink-2">국문 자료를 영문으로 옮기고 있습니다<span className="pulse">…</span></span>;
+  else if (job === 'en') statusLine = <span className="text-ink-2">영문 변환 중 · 섹션 <span className="font-mono">{Math.max(enSections.filter((s) => s.started).length, 1)}/4</span></span>;
+  else if (notice) statusLine = <span className={notice.kind === 'crit' ? 'text-crit' : 'text-warn'}>{notice.text}</span>;
+  else if (ko.status === 'error') statusLine = <span className="text-crit">{errCopy(ko.error)} 여기까지 작성된 내용은 유지됩니다.</span>;
+  else if (en.status === 'error') statusLine = <span className="text-crit">영문 변환 실패 — {errCopy(en.error)}</span>;
+  else if (ko.raw && !koParsed && !running) statusLine = <span className="text-crit">출력 형식을 인식하지 못했습니다(섹션 헤더 없음). 원문은 탭에 표시됩니다 — 국문 다시 생성을 눌러 주세요.</span>;
+  else if (sample.status === 'unavailable') statusLine = <span className="text-warn">이 화면에서는 Claude를 사용할 수 없습니다. claude.ai에서 열면 생성 기능이 켜집니다.</span>;
+  else if (sample.status === 'connecting') statusLine = <span className="text-ink-3">Claude 연결 중<span className="pulse">…</span></span>;
+  else if (parsing) statusLine = <span className="text-ink-3">참고 자료를 읽는 중<span className="pulse">…</span></span>;
+  else if (koReady && stale) statusLine = <span className="text-warn">국문이 수정되었습니다 — 최신 국문 기준으로 영문을 다시 변환하세요.</span>;
+  else if (koReady && inputsChanged) statusLine = <span className="text-warn">입력이 변경되었습니다 — 다시 생성하면 반영됩니다.</span>;
+  else if (ko.status === 'cancelled' && !enReady) statusLine = <span className="text-warn">국문 생성 중단됨 · 여기까지 작성된 내용을 유지합니다</span>;
+  else if (en.status === 'cancelled') statusLine = <span className="text-warn">영문 변환 중단됨 · 여기까지 작성된 내용을 유지합니다</span>;
+  else if (koReady && enReady) statusLine = <span className="text-ink-2">국문 · 영문 완료 — 상단에서 언어를 전환하세요.</span>;
+  else if (koReady) statusLine = <span className="text-ink-2">국문 완료 · <span className="font-mono">{charCount(ko.raw).toLocaleString()}</span>자 — 검수·편집 후 영문으로 변환하세요.</span>;
+  else if (!hasSource) statusLine = <span className="text-ink-3">원천 정보를 입력하거나 원천 파일을 올리면 국문 자료를 먼저 생성합니다.</span>;
+  else statusLine = <span className="text-ink-3">{brand.name} · {channel.name} · {sourceType.name}</span>;
+
+  const tab = TABS[active];
+  const sec = sections[active];
+  const isEditingHere = editing && editing.lang === view && editing.idx === active;
+  const enPreview = view === 'en' && !en.raw && job !== 'en';
+  const focusInset = 'focus-visible:outline-offset-[-2px]';
+
+  return (
+    <div className="min-h-screen bg-ground text-ink">
+      <header className="h-14 border-b border-line bg-surface flex items-center justify-between px-5 gap-4">
+        <div className="flex items-baseline gap-3 min-w-0">
+          <span className="font-mono text-[10.5px] tracking-[0.18em] uppercase text-ink-3 shrink-0">KO → EN</span>
+          <h1 className="font-display font-medium text-[21px] leading-none text-ink truncate">Marketing Material Generator</h1>
+        </div>
+        <StatusPill status={sample.status} />
+      </header>
+
+      <main className="workspace grid grid-cols-1 lg:grid-cols-[300px_minmax(0,1fr)_minmax(0,1.15fr)]">
+        {/* ── Left rail: brand & channel ── */}
+        <aside className="border-b lg:border-b-0 lg:border-r border-line bg-surface lg:overflow-y-auto">
+          <div className="p-5 flex flex-col gap-7">
+            <section>
+              <Eyebrow>자사 브랜드</Eyebrow>
+              <div role="radiogroup" aria-label="브랜드" className="border border-line rounded-sm divide-y divide-line">
+                {BRANDS.map((b) => {
+                  const sel = b.id === brandId;
+                  return (
+                    <button key={b.id} type="button" role="radio" aria-checked={sel} onClick={() => setBrandId(b.id)}
+                      className={`w-full text-left px-4 py-3 flex items-center justify-between gap-3 transition-colors ${sel ? 'bg-surface-2' : 'hover:bg-surface-2'}`}>
+                      <span className="min-w-0">
+                        <span className={`block font-display text-[19px] leading-tight ${sel ? 'text-ink' : 'text-ink-2'}`}>{b.name}</span>
+                        <span className="block font-mono text-[10.5px] tracking-[0.12em] text-ink-3 mt-0.5">{profiles[b.id].en.toUpperCase()}</span>
+                      </span>
+                      <Radio checked={sel} />
+                    </button>
+                  );
+                })}
+              </div>
+
+              <button type="button" onClick={() => setVoiceOpen((v) => !v)} aria-expanded={voiceOpen}
+                className="mt-3 inline-flex items-center gap-1.5 text-[12px] text-ink-2 hover:text-ink">
+                <svg width="10" height="10" viewBox="0 0 10 10" className={`transition-transform ${voiceOpen ? 'rotate-90' : ''}`} aria-hidden="true"><path d="M3 1.5L7 5 3 8.5" fill="none" stroke="currentColor" strokeWidth="1.3" /></svg>
+                {brand.name} 브랜드 보이스 편집
+              </button>
+              {voiceOpen && (
+                <div className="mt-3 flex flex-col gap-3">
+                  <label className="block">
+                    <span className="block font-mono text-[10.5px] tracking-[0.12em] uppercase text-ink-3 mb-1">English brand name</span>
+                    <input value={profile.en} onChange={(e) => updateProfile({ en: e.target.value })}
+                      className="w-full h-9 px-3 border border-line rounded-sm bg-surface-2 text-[13px] focus:border-ink" />
+                  </label>
+                  <label className="block">
+                    <span className="block font-mono text-[10.5px] tracking-[0.12em] uppercase text-ink-3 mb-1">Brand voice (English, sent with the prompt)</span>
+                    <textarea value={profile.voice} rows={4} onChange={(e) => updateProfile({ voice: e.target.value })}
+                      className="w-full p-3 border border-line rounded-sm bg-surface-2 text-[13px] leading-relaxed focus:border-ink" />
+                  </label>
+                  <p className="text-[11.5px] text-ink-3 leading-relaxed">초기값은 톤 가이드 예시입니다. 실제 브랜드 가이드라인에 맞춰 수정하면 이 브라우저에 저장됩니다.</p>
+                </div>
+              )}
+            </section>
+
+            <section>
+              <Eyebrow>타겟 채널</Eyebrow>
+              <div role="radiogroup" aria-label="타겟 채널" className="border border-line rounded-sm divide-y divide-line">
+                {CHANNELS.map((c) => {
+                  const sel = c.id === channelId;
+                  return (
+                    <button key={c.id} type="button" role="radio" aria-checked={sel} onClick={() => setChannelId(c.id)}
+                      className={`w-full text-left px-4 py-3 flex items-start justify-between gap-3 transition-colors ${sel ? 'bg-surface-2' : 'hover:bg-surface-2'}`}>
+                      <span className="min-w-0">
+                        <span className={`block text-[14px] font-semibold leading-tight ${sel ? 'text-ink' : 'text-ink-2'}`}>{c.name}</span>
+                        <span className="block text-[12px] text-ink-2 mt-1">{c.audience}</span>
+                        <span className="block text-[11.5px] text-ink-3 mt-0.5 leading-relaxed">{c.desc}</span>
+                      </span>
+                      <span className="pt-0.5"><Radio checked={sel} /></span>
+                    </button>
+                  );
+                })}
+              </div>
+              <p className="mt-3 text-[11.5px] text-ink-3 leading-relaxed">선택한 채널에 맞춰 핵심 메시지가 최적화되고, 나머지 세 산출물은 각자의 독자에 맞게 조정됩니다.</p>
+            </section>
+
+            <section>
+              <Eyebrow>작업 흐름</Eyebrow>
+              <ol className="text-[12px] text-ink-2 leading-relaxed flex flex-col gap-1.5">
+                <li className="flex gap-2"><span className="font-mono text-ink-3 shrink-0">1</span><span>원천 정보를 <b className="font-semibold text-ink">입력하거나 파일로 올리고</b> 국문 생성 — 국내용 초안</span></li>
+                <li className="flex gap-2"><span className="font-mono text-ink-3 shrink-0">2</span><span>탭별로 검수하고 필요하면 <b className="font-semibold text-ink">편집</b></span></li>
+                <li className="flex gap-2"><span className="font-mono text-ink-3 shrink-0">3</span><span><b className="font-semibold text-ink">영문 변환</b> — 검수된 국문 기준으로 해외용 세트 생성</span></li>
+              </ol>
+            </section>
+          </div>
+        </aside>
+
+        {/* ── Center: source input & references ── */}
+        <section className="border-b lg:border-b-0 lg:border-r border-line bg-ground flex flex-col min-h-[460px] lg:min-h-0 lg:overflow-y-auto">
+          <div className="px-5 pt-5 pb-3">
+            <Eyebrow right={
+              <div role="radiogroup" aria-label="원천 정보 유형" className="inline-flex border border-line rounded-sm overflow-hidden bg-surface">
+                {SOURCE_TYPES.map((s) => {
+                  const sel = s.id === sourceTypeId;
+                  return (
+                    <button key={s.id} type="button" role="radio" aria-checked={sel} onClick={() => setSourceTypeId(s.id)}
+                      className={`h-7 px-3 text-[12px] transition-colors ${focusInset} ${sel ? 'bg-ink text-ground' : 'text-ink-2 hover:text-ink'}`}>
+                      {s.name}
+                    </button>
+                  );
+                })}
+              </div>
+            }>원천 정보 · Source</Eyebrow>
+            <p className="text-[12.5px] text-ink-2 leading-relaxed">{sourceType.hint}</p>
+          </div>
+
+          <div className="flex-1 min-h-0 px-5" {...dropProps('source')}>
+            <textarea ref={textareaRef} value={source} onChange={(e) => setSource(e.target.value)} onKeyDown={onSourceKey}
+              placeholder={sourceType.placeholder} spellCheck={false} aria-label="원천 정보"
+              className={`w-full h-full min-h-[180px] p-4 border rounded-sm bg-surface text-[14px] leading-[1.65] placeholder:text-ink-3 focus:border-ink ${dragOver === 'source' ? 'border-accent' : 'border-line'}`} />
+          </div>
+
+          <div className="px-5 py-3 flex items-center justify-between gap-3 flex-wrap">
+            <div className="flex items-center gap-3 text-[12px]">
+              <span className={`font-mono ${sourceBytes > MAX_SOURCE_BYTES ? 'text-crit' : 'text-ink-3'}`}>{source.length.toLocaleString()}자 · {fmtBytes(sourceTotalBytes)} / {fmtBytes(MAX_SOURCE_BYTES)}</span>
+              {sourceBytes > MAX_SOURCE_BYTES && <span className="text-crit">너무 깁니다 — 핵심만 남겨 주세요</span>}
+              <span className="hidden sm:inline text-ink-3">Ctrl + Enter로 국문 생성</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Btn onClick={loadExample}>예시 불러오기</Btn>
+              <Btn variant="text" onClick={() => setSource('')} disabled={!source}>지우기</Btn>
+            </div>
+          </div>
+
+          {/* Source documents: the clinical / competitor originals themselves */}
+          <div className="px-5 pb-4" {...dropProps('source')}>
+            <div className={`border border-dashed rounded-sm px-4 py-3 flex items-center justify-between gap-3 flex-wrap transition-colors ${dragOver === 'source' ? 'border-accent bg-accent-soft' : 'border-line-strong bg-surface'}`}>
+              <div className="text-[12.5px] text-ink-2 leading-relaxed min-w-0 flex-1">
+                {sourceType.id === 'clinical' ? '임상 보고서·통계 표·발표 자료' : '경쟁사 리포트·전시회 메모·가격표'} 원본을 올리면 직접 입력한 내용과 함께 <b className="font-semibold text-ink">1차 자료</b>로 읽습니다.
+                <span className="block text-[11.5px] text-ink-3 mt-0.5">수치는 파일에서 그대로 인용하며, 입력창을 비워 두고 파일만 올려도 됩니다.</span>
+              </div>
+              <div className="shrink-0">
+                <input ref={sourceInputRef} type="file" multiple accept={acceptList} className="hidden" aria-label="원천 자료 파일 선택"
+                  onChange={(e) => { addFiles(e.target.files, 'source'); e.target.value = ''; }} />
+                <Btn onClick={() => sourceInputRef.current && sourceInputRef.current.click()}>원천 파일 올리기</Btn>
+              </div>
+            </div>
+            {(sourceFiles.length > 0 || sourceImages.length > 0) && (
+              <ul className="mt-2 flex flex-col gap-1 max-h-[168px] overflow-y-auto pr-0.5">
+                {sourceFiles.map((r) => (
+                  <FileRow key={r.id} file={r} used={srcUsedById[r.id] || 0} onRemove={removeSourceFile} onInline={inlineSourceFile} />
+                ))}
+                {sourceImages.map((im) => (
+                  <li key={im.id} className="flex items-center gap-3 h-9 px-3 border border-line rounded-sm bg-surface text-[12px]">
+                    <span className="font-mono text-[10px] tracking-wider text-accent w-10 shrink-0">IMG</span>
+                    <span className="truncate min-w-0 flex-1 text-ink" title={im.name}>{im.name}</span>
+                    <span className="font-mono text-[11px] text-ink-3 shrink-0">{fmtBytes(im.size)} · 원천 이미지</span>
+                    <button type="button" onClick={() => removeImage(im.id)} aria-label={`${im.name} 제거`} className="shrink-0 text-ink-3 hover:text-ink px-1 text-[14px] leading-none">×</button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          {/* Reference materials: parsed in the browser, budgeted into the prompt */}
+          <div className="px-5 pb-5 pt-4 border-t border-line">
+            <Eyebrow right={
+              <span className="text-[11.5px] text-ink-3 font-mono">
+                {readyRefs.length > 0
+                  ? `문서 ${readyRefs.length} · 프롬프트 여유 ${fmtBytes(refBudget)}`
+                  : '선택 사항 — 톤·용어 참고용'}
+              </span>
+            }>참고 자료 · References</Eyebrow>
+            <div {...dropProps('ref')}
+              className={`border border-dashed rounded-sm px-4 py-3 flex items-center justify-between gap-3 flex-wrap transition-colors ${dragOver === 'ref' ? 'border-accent bg-accent-soft' : 'border-line-strong bg-surface'}`}>
+              <div className="text-[12.5px] text-ink-2 leading-relaxed min-w-0 flex-1">
+                브랜드 가이드, 기존 카피, 용어집처럼 <b className="font-semibold text-ink">톤·용어를 맞출 자료</b>를 올립니다. 사실의 출처는 위 원천 정보입니다.
+                <span className="block text-[11.5px] text-ink-3 mt-0.5">
+                  PDF · DOCX · PPTX · XLSX · TXT · MD · CSV · JSON{imageLimits ? ` · 이미지 최대 ${imageLimits.maxCount}장` : ''} — 파일은 이 브라우저 안에서만 읽습니다.
+                </span>
+              </div>
+              <div className="shrink-0">
+                <input ref={fileInputRef} type="file" multiple accept={acceptList} className="hidden" aria-label="참고 자료 파일 선택"
+                  onChange={(e) => { addFiles(e.target.files, 'ref'); e.target.value = ''; }} />
+                <Btn onClick={() => fileInputRef.current && fileInputRef.current.click()}>파일 선택</Btn>
+              </div>
+            </div>
+
+            {(refs.length > 0 || imageRefs.some((im) => im.origin !== 'source')) && (
+              <ul className="mt-2 flex flex-col gap-1 max-h-[168px] overflow-y-auto pr-0.5">
+                {refs.map((r) => <FileRow key={r.id} file={r} used={usedById[r.id] || 0} onRemove={removeRef} />)}
+                {imageRefs.filter((im) => im.origin !== 'source').map((im) => (
+                  <li key={im.id} className="flex items-center gap-3 h-9 px-3 border border-line rounded-sm bg-surface text-[12px]">
+                    <span className="font-mono text-[10px] tracking-wider text-clinical w-10 shrink-0">IMG</span>
+                    <span className="truncate min-w-0 flex-1 text-ink" title={im.name}>{im.name}</span>
+                    <span className="font-mono text-[11px] text-ink-3 shrink-0">{fmtBytes(im.size)} · 국문 생성 시 첨부</span>
+                    <button type="button" onClick={() => removeImage(im.id)} aria-label={`${im.name} 제거`} className="shrink-0 text-ink-3 hover:text-ink px-1 text-[14px] leading-none">×</button>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {imageRefs.length > 0 && <p className="mt-1.5 text-[11.5px] text-ink-3">이미지는 이 세션에서만 유지됩니다. 새로고침하면 다시 첨부하세요.{imageLimits && imageRefs.length > imageLimits.maxCount ? ` 한 번에 ${imageLimits.maxCount}장까지 전달되며, 원천 이미지가 우선합니다.` : ''}</p>}
+          </div>
+        </section>
+
+        {/* ── Right: generate, translate & outputs ── */}
+        <section className="bg-surface flex flex-col min-h-[560px] lg:min-h-0">
+          <div className="px-5 pt-4 pb-3 border-b border-line flex items-center gap-3 flex-wrap">
+            {running ? (
+              <Btn variant="stop" onClick={stop}><span className="w-2 h-2 bg-ink" aria-hidden="true" /> Stop</Btn>
+            ) : !koReady ? (
+              <Btn variant="primary" onClick={() => generateKorean()} disabled={!canGenerate}>국문 생성 <span aria-hidden="true">→</span></Btn>
+            ) : !enReady || stale ? (
+              <Btn variant="primary" onClick={() => translateEnglish({ fresh: stale })} disabled={!canTranslate}>{stale ? '영문 다시 변환' : '영문 변환'} <span aria-hidden="true">→</span></Btn>
+            ) : (
+              <Btn variant="outline" onClick={() => translateEnglish({ fresh: true })} disabled={!canTranslate}>영문 다시 변환</Btn>
+            )}
+            <div className="text-[12.5px] min-w-0 flex-1">{statusLine}</div>
+            {!running && koReady && (
+              <div className="flex items-center gap-2">
+                <Btn onClick={() => generateKorean({ fresh: true })} disabled={!canGenerate}>국문 다시 생성</Btn>
+                <CopyButton text={allText} label={view === 'ko' ? '국문 전체 복사' : '영문 전체 복사'} />
+              </div>
+            )}
+          </div>
+
+          {current.truncated && (
+            <div className="px-5 py-2 text-[12px] text-warn bg-warn-soft border-b border-line">출력이 길이 제한으로 잘렸습니다. 원천 정보나 참고 자료를 줄인 뒤 다시 생성하세요.</div>
+          )}
+
+          <div className="px-5 border-b border-line flex items-center justify-between gap-3">
+            <div role="tablist" aria-label="산출물" className="flex gap-1 overflow-x-auto overflow-y-hidden min-w-0 self-stretch">
+              {TABS.map((t, i) => {
+                const s = sections[i];
+                const isActive = i === active;
+                const isWriting = viewRunning && i === writingIdx;
+                return (
+                  <button key={t.id} type="button" role="tab" aria-selected={isActive} aria-controls={`panel-${t.id}`} id={`tab-${t.id}`}
+                    onClick={() => { pinnedRef.current = true; setActive(i); setEditing(null); }}
+                    className={`relative shrink-0 flex items-center gap-2 h-11 px-3 text-[13px] border-b-2 transition-colors ${focusInset} ${isActive ? 'border-accent text-ink font-medium' : 'border-transparent text-ink-3 hover:text-ink-2'}`}>
+                    <span className={`inline-flex items-center justify-center w-[18px] h-[18px] rounded-full font-mono text-[10.5px] ${s.started ? (isActive ? 'bg-accent text-accent-ink' : 'bg-accent-soft text-accent') : 'border border-line-strong text-ink-3'}`}>{t.num}</span>
+                    {t.label}
+                    {isWriting && <span className="w-1.5 h-1.5 rounded-full bg-accent pulse" aria-label="작성 중" />}
+                    {!isWriting && s.started && s.complete && <Check className="text-good" />}
+                    {s.edited && <span className="font-mono text-[9.5px] tracking-wider text-warn" title="편집됨">EDIT</span>}
+                  </button>
+                );
+              })}
+            </div>
+            <div role="radiogroup" aria-label="언어" className="inline-flex shrink-0 border border-line rounded-sm overflow-hidden bg-surface-2 my-2">
+              {['ko', 'en'].map((l) => {
+                const sel = view === l;
+                const st = l === 'ko' ? ko : en;
+                const has = !!st.raw;
+                const busy = job === l;
+                return (
+                  <button key={l} type="button" role="radio" aria-checked={sel} onClick={() => { setView(l); setEditing(null); pinnedRef.current = false; }}
+                    className={`h-7 px-3 text-[12px] inline-flex items-center gap-1.5 transition-colors ${focusInset} ${sel ? 'bg-ink text-ground' : 'text-ink-2 hover:text-ink'}`}>
+                    {LANGS[l].label}
+                    {busy ? <span className={`w-1.5 h-1.5 rounded-full pulse ${sel ? 'bg-ground' : 'bg-accent'}`} /> : has ? <Check /> : <span className={`font-mono text-[9.5px] ${sel ? 'text-ground' : 'text-ink-3'}`}>{l === 'en' ? '미변환' : '미생성'}</span>}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {view === 'en' && stale && en.raw && (
+            <div className="px-5 py-2 text-[12px] text-warn bg-warn-soft border-b border-line flex items-center justify-between gap-3">
+              <span>국문이 수정된 뒤의 영문이 아닙니다. 최신 국문 기준으로 다시 변환하세요.</span>
+              <Btn onClick={() => translateEnglish({ fresh: true })} disabled={!canTranslate}>영문 다시 변환</Btn>
+            </div>
+          )}
+
+          <div id={`panel-${tab.id}`} role="tabpanel" aria-labelledby={`tab-${tab.id}`} className="flex-1 min-h-0 overflow-y-auto">
+            <div className="px-6 py-6 max-w-[72ch]">
+              <div className="flex items-end justify-between gap-4 mb-5">
+                <div>
+                  <div className="font-mono text-[10.5px] tracking-[0.16em] uppercase text-ink-3">Output {tab.num} of 4 · {view === 'ko' ? '국문 · 국내용' : 'English · 해외용'}</div>
+                  <h2 className="font-display text-[24px] leading-tight mt-1" style={{ textWrap: 'balance' }} lang={view}>{view === 'ko' ? tab.titleKo : tab.titleEn}</h2>
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  {sec.started && !isEditingHere && <span className="font-mono text-[11px] text-ink-3 mr-1">{lengthLabel(sec.body, view)}</span>}
+                  {sec.started && !isEditingHere && sec.complete && !running && <Btn onClick={startEdit}>편집</Btn>}
+                  {!isEditingHere && <CopyButton text={sec.body} />}
+                </div>
+              </div>
+
+              {isEditingHere ? (
+                <div className="flex flex-col gap-3">
+                  <textarea value={editing.text} onChange={(e) => setEditing({ ...editing, text: e.target.value })} spellCheck={false}
+                    aria-label={`${view === 'ko' ? tab.titleKo : tab.titleEn} 편집`}
+                    className="editor w-full min-h-[360px] p-4 border border-ink rounded-sm bg-surface-2" lang={view} />
+                  <div className="flex items-center justify-between gap-3 flex-wrap">
+                    <span className="text-[12px] text-ink-3">마크다운 그대로 편집합니다(### 소제목, - 불릿, **굵게**). {view === 'ko' && (enReady || en.raw) ? '저장하면 영문을 다시 변환해야 합니다.' : ''}</span>
+                    <div className="flex items-center gap-2">
+                      <Btn variant="text" onClick={() => setEditing(null)}>취소</Btn>
+                      <Btn variant="primarySmall" onClick={saveEdit}>저장</Btn>
+                    </div>
+                  </div>
+                </div>
+              ) : current.raw && !running && !sections.some((s) => s.started) ? (
+                <div className="flex flex-col gap-4">
+                  <div className="border border-crit rounded-sm bg-crit-soft px-4 py-3 text-[12.5px] text-crit leading-relaxed">
+                    생성된 텍스트에서 섹션 헤더(<span className="font-mono">## [1] KEY MESSAGES</span> …)를 찾지 못해 탭으로 나누지 못했습니다. 아래 원문을 확인하고 <b className="font-semibold">{view === 'ko' ? '국문 다시 생성' : '영문 다시 변환'}</b>을 눌러 주세요.
+                  </div>
+                  <div className="flex items-center justify-end"><CopyButton text={current.raw} label="원문 복사" /></div>
+                  <CopyBody body={current.raw} hashtags={false} streaming={false} lang={view} />
+                </div>
+              ) : sec.started ? (
+                <>
+                  {sec.edited && (
+                    <div className="mb-4 flex items-center justify-between gap-3 text-[12px] text-warn">
+                      <span>편집된 버전입니다.</span>
+                      <Btn variant="text" onClick={revertEdit}>생성 원본으로 되돌리기</Btn>
+                    </div>
+                  )}
+                  <CopyBody body={sec.body} hashtags={tab.id === 'insta'} streaming={viewRunning && !sec.complete} lang={view} />
+                </>
+              ) : viewRunning ? (
+                <div className="flex flex-col gap-3" aria-live="polite" aria-label="작성 대기 중">
+                  <div className="skeleton h-4 w-3/4" /><div className="skeleton h-4 w-full" /><div className="skeleton h-4 w-5/6" />
+                  <div className="h-2" />
+                  <div className="skeleton h-4 w-2/3" /><div className="skeleton h-4 w-11/12" /><div className="skeleton h-4 w-1/2" />
+                  <p className="text-[12.5px] text-ink-3 mt-2">{current.status === 'thinking' ? '첫 문장이 나오기까지 보통 5–60초 걸립니다.' : '앞 섹션을 먼저 작성하고 있습니다.'}</p>
+                </div>
+              ) : enPreview ? (
+                <div className="border border-dashed border-line-strong rounded-sm p-5 flex flex-col gap-4">
+                  <p className="text-[13px] text-ink-2 leading-relaxed">
+                    {koReady
+                      ? '검수된 국문 자료를 기준으로 해외용 영문 세트를 만듭니다. 사실과 수치는 그대로 유지하고, 표현은 현지 마케터가 승인할 수 있는 영어로 옮기며 해외 시장용 클레임 규칙을 적용합니다.'
+                      : '먼저 국문 자료를 생성하면, 검수 후 이 자리에서 해외용 영문 세트로 변환할 수 있습니다.'}
+                  </p>
+                  {koReady && <div><Btn variant="primary" onClick={() => translateEnglish()} disabled={!canTranslate}>영문 변환 <span aria-hidden="true">→</span></Btn></div>}
+                  {en.status === 'error' && <p className="text-[12.5px] text-crit">{errCopy(en.error)}</p>}
+                </div>
+              ) : (
+                <div className="border border-dashed border-line-strong rounded-sm p-5">
+                  <p className="text-[13px] text-ink-2 leading-relaxed">{tab.empty}</p>
+                  {current.status === 'error' && <p className="text-[12.5px] text-crit mt-3">{errCopy(current.error)}</p>}
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
